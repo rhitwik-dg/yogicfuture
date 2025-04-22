@@ -75,195 +75,60 @@ document.addEventListener('DOMContentLoaded', function() {
 const episodes = [
     {
         id: 1,
-        title: "Agni Ep 1 — Eating with Gratitude!",
-        videoId: "7dD4lBhPkLA"  // Replace with actual YouTube video ID
+        title: "How to start an online Yoga Studio in 2025 with Yogicfuture ?",
+        videoId: "BUumtgvuJxI"  // Replace with actual YouTube video ID
     },
     {
         id: 2,
-        title: "Agni Ep 2 — Chewing Food 24 Times!",
-        videoId: "oyJ544AgYOc"
+        title: "How to attract Potential Yoga clients using Yogicfuture in 2025 ?",
+        videoId: "mbnctk5Lfdc"
     },
     {
         id: 3,
-        title: "Agni Ep 3 — Setting the Right Ambience for Eating",
-        videoId: "gX44WjfLWcU"
+        title: "Make your Students come Crawling back to your",
+        videoId: "fpL5qta8MEM"
     },
     {
         id: 4,
-        title: "Agni Ep 4 — Neem & Turmeric!",
+        title: "How to win on Facebook Ads everytime with yogicfuture",
         videoId: "uI8yVzlZAmU"
     },
     {
         id: 5,
-        title: "Agni Ep 5 — How Many Meals Can One Have?",
+        title: "Cheat code to make money using yogicfuture",
         videoId: "ZIlTmt0zlJg"
     },
     {
         id: 6,
-        title: "Agni Ep 6 — Consume At least 50% Raw Food",
+        title: " A step by step process to open your own studio.",
         videoId: "TelLzZZ9vSI"
     },
     {
         id: 7,
-        title: "Agni Ep 7 — Consuming a Variety of Grains",
+        title: "The beauty of One 2 One sessions.",
         videoId: "tja2Awt3_rU"
     },
     {
         id: 8,
-        title: "Agni Ep 8 — Eating Fresh Food",
+        title: "Struggling to get new students ? Lets talk about Leads.",
         videoId: "w7npSa6x1P0"
     },
     {
         id: 9,
-        title: "Agni Ep 9 — Eating Locally Grown Food",
+        title: "Yogicfuture calender is a cheatcode for getting clients",
         videoId: "7jTgxqqAZGM"
     },
     {
         id: 10,
-        title: "Agni Ep 10 — Drinking Water with Reverenceg",
+        title: " Lets solve pricing for you.",
         videoId: "I4Vtaq3oHdU"
     },
     {
         id: 11,
-        title: "Agni Ep 11 — Ideal Temperature of Water",
+        title: "Manage your team.",
         videoId: "YOUTUBE_VIDEO_ID_3"
     },
-    {
-        id: 12,
-        title: "Agni Ep 12 — Water in Copper Vessels",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 13,
-        title: "Agni Ep 13 — Positve, Negative & Zero Pranic Foods",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 14,
-        title: "Agni Ep 14 — Eating Whole Grains",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 15,
-        title: "Agni Ep 15 | Jeevarasam - Drink Consecrated Water",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 16,
-        title: "Agni Series Ep 16 | Fasting on Ekadashi - a tremendous",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 17,
-        title: "Agni Series Ep 17 | Eating Vegetarian Food",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 18,
-        title: "Agni Series Ep 18 | Don't Sleep After Your Meals!",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 19,
-        title: "Agni Series Ep 19 | Why Yogis avoid milk!",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 20,
-        title: "Agni Series Ep 20 | How much water to consume?",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 21,
-        title: "Agni Series Ep 21 | Guidelines for Solar and Lunar Eclipses!",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 22,
-        title: "Agni Series Ep 22 | Groundnuts - A Yogic Meal!",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 23,
-        title: "Agni Series Ep 23 | All About Sprouts - including how to sprout green gram!",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 24,
-        title: "Agni Series Ep 24 | Horsegram - Increase Your Ushna! (includes Horsegram - Kollu soup recipe!)",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 25,
-        title: "Agni Series Ep 25 | Multigrain Health Drink (includes Sanjeevini Ganji recipe!)",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 26,
-        title: "Agni Series Ep 26 | Say NO to White Sugar!",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 27,
-        title: "Agni Series Ep 27 | Drumstick - A Miracle Tree!",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
-    {
-        id: 28,
-        title: "Agni Series Ep 28 | Honey - Take This Daily!",
-        videoId: "GLMVkj7hSrU"
-    },
-    {
-        id: 29,
-        title: "Agni Series Ep 29 | All About Ragi - Includes Ragi Kanji recipe!",
-        videoId: "gTnqLZE-j0I"
-    },
-    {
-        id: 30,
-        title: "Agni Series Ep 30 | Ash Gourd - Includes Ash Gourd juice recipe!",
-        videoId: "-hWKhKbyQT8"
-    },
-    {
-        id: 31,
-        title: "Agni Series Ep 31 | Amla - Boost Your Immunity!",
-        videoId: "YSRW_rr4r80"
-    },
-    {
-        id: 32,
-        title: "Agni Series Ep 32 | Sesame - Boost Your Energy!",
-        videoId: "1e0eV7KqmoE"
-    },
-    {
-        id: 33,
-        title: "Agni Series Ep 33 | The Best Way to Heat Water",
-        videoId: "AUMeaR-tCzw"
-    },
-    {
-        id: 34,
-        title: "Agni Series Ep 34 | Coconut - A Yogi's Choice!",
-        videoId: "N3poIUCR68g"
-    },
-    {
-        id: 35,
-        title: "Agni Series Ep 35 | Coping With Food Allergies!",
-        videoId: "UFHgi2_vHpo"
-    },
-    {
-        id: 36,
-        title: "Agni Series Ep 36 | Say No To GMO Foods!",
-        videoId: "-9-V_hl6TZU"
-    },
-    {
-        id: 37,
-        title: "Agni Series Ep 37 | Eating With Bare Hands",
-        videoId: "voaqFGxfMgg"
-    },
-    {
-        id: 38,
-        title: "Agni Series Ep 38 | How to make a yogic meal easily?",
-        videoId: "lUx8WFFpTbk"
-    },
-    
+        
     // Add more episodes as needed...
 ];
 

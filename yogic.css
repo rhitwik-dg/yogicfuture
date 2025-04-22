@@ -855,27 +855,6 @@ section {
         .playlist-scroll::-webkit-scrollbar-thumb:hover {
             background: #816838;
         }
-        
-        .bg-custom-yellow {
-            background-color: #ffe6b3;
-        }
-        
-        .bg-custom-darker-yellow {
-            background-color: #f5cc78;
-        }
-        
-        .bg-custom-btn {
-            background-color: #E5B94E;
-        }
-        
-        .bg-custom-btn:hover {
-            background-color: #d3a93d;
-        }
-        
-        .playlist-scroll {
-            height: 400px;
-            overflow-y: auto;
-        }
 
     ------------------------------------------------------------------------
 

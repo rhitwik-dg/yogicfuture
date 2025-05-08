@@ -125,7 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         currentVideoTitle.textContent = this.getAttribute('data-title');
                         
                         // In a real implementation, you would update the video src here
-                        // For example: loadYouTubeVideo(this.getAttribute('data-video-id'));
+                        // For example: 
+                        loadYouTubeVideo(this.getAttribute('data-video-id'));
                     });
                 });
             }
@@ -134,8 +135,8 @@ document.addEventListener('DOMContentLoaded', function() {
             function loadYouTubeVideo(videoId) {
                 // Replace the player-button with an actual YouTube embed
                 // Example:
-                // const playerContainer = document.querySelector('.player-container');
-                // playerContainer.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                const playerContainer = document.querySelector('.player-container');
+                playerContainer.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
             }
             
             // Initialize the video list
@@ -144,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Set the initial video title
             if (videos.length > 0) {
                 currentVideoTitle.textContent = videos[0].title;
-                // loadYouTubeVideo(videos[0].videoId); // Uncomment to load the first video automatically
+                loadYouTubeVideo(videos[0].videoId); // Uncomment to load the first video automatically
             }
         });
         

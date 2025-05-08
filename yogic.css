@@ -711,7 +711,7 @@ section {
         }
         
 .video-list {
-            background-color: #98d4a9;
+            background-color: #ffd49c;
             border-radius: 15px;
             padding: 15px;
             height: 500px;
@@ -739,11 +739,11 @@ section {
         }
         
 .video-title:hover {
-            background-color: #7fbf8e;
+            background-color: #e3a24d;
         }
         
 .active-video {
-            background-color: #7975a7 !important;
+            background-color: #ffaa54 !important;
             color: white;
             font-weight: bold;
         }
@@ -767,7 +767,7 @@ section {
         }
         
 .player-button {
-            background-color: #ff3a3a;
+            background-color: #ff7e14;
             width: 100px;
             height: 100px;
             border-radius: 50%;

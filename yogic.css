@@ -797,17 +797,17 @@ section {
         }
         
 .video-list::-webkit-scrollbar-track {
-            background: #c0e6cc;
+            background: #ffc891;
             border-radius: 5px;
         }
         
 .video-list::-webkit-scrollbar-thumb {
-            background: #6b9d7b;
+            background: #e3a566;
             border-radius: 5px;
         }
         
 .video-list::-webkit-scrollbar-thumb:hover {
-            background: #4e7259;
+            background: #c47525;
         }
 
 

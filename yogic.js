@@ -72,107 +72,101 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const episodes = [
-    {
-        id: 1,
-        title: "How to start an online Yoga Studio in 2025 with Yogicfuture ?",
-        videoId: "BUumtgvuJxI"  // Replace with actual YouTube video ID
-    },
-    {
-        id: 2,
-        title: "How to attract Potential Yoga clients using Yogicfuture in 2025 ?",
-        videoId: "mbnctk5Lfdc"
-    },
-    {
-        id: 3,
-        title: "Make your Students come Crawling back to your",
-        videoId: "fpL5qta8MEM"
-    },
-    {
-        id: 4,
-        title: "How to win on Facebook Ads everytime with yogicfuture",
-        videoId: "uI8yVzlZAmU"
-    },
-    {
-        id: 5,
-        title: "Cheat code to make money using yogicfuture",
-        videoId: "ZIlTmt0zlJg"
-    },
-    {
-        id: 6,
-        title: " A step by step process to open your own studio.",
-        videoId: "TelLzZZ9vSI"
-    },
-    {
-        id: 7,
-        title: "The beauty of One 2 One sessions.",
-        videoId: "tja2Awt3_rU"
-    },
-    {
-        id: 8,
-        title: "Struggling to get new students ? Lets talk about Leads.",
-        videoId: "w7npSa6x1P0"
-    },
-    {
-        id: 9,
-        title: "Yogicfuture calender is a cheatcode for getting clients",
-        videoId: "7jTgxqqAZGM"
-    },
-    {
-        id: 10,
-        title: " Lets solve pricing for you.",
-        videoId: "I4Vtaq3oHdU"
-    },
-    {
-        id: 11,
-        title: "Manage your team.",
-        videoId: "YOUTUBE_VIDEO_ID_3"
-    },
+ const videos = [
+            {
+                title: "Agni Ep 1 — Eating with Gratitude!",
+                videoId: "video1" // Replace with actual YouTube video ID
+            },
+            {
+                title: "Agni Ep 2 — Chewing Food 24 Times!",
+                videoId: "video2" // Replace with actual YouTube video ID
+            },
+            {
+                title: "Agni Ep 3— Setting the Right Ambience for Eating",
+                videoId: "video3" // Replace with actual YouTube video ID
+            },
+            {
+                title: "Agni Ep 4— Neem & Turmeric!",
+                videoId: "video4" // Replace with actual YouTube video ID
+            },
+            {
+                title: "Agni Ep 5— Benefits of Ghee",
+                videoId: "video5" // Replace with actual YouTube video ID
+            },
+            {
+                title: "Agni Ep 6— Seasonal Eating",
+                videoId: "video6" // Replace with actual YouTube video ID
+            },
+            {
+                title: "Agni Ep 7— Mindful Cooking",
+                videoId: "video7" // Replace with actual YouTube video ID
+            },
+            {
+                title: "Agni Ep 8— Water Consumption",
+                videoId: "video8" // Replace with actual YouTube video ID
+            }
+            // Add new videos here as needed
+        ];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoListElement = document.getElementById('videoList');
+            const currentVideoTitle = document.getElementById('currentVideoTitle');
+            
+            // Generate video list from the videos array
+            function generateVideoList() {
+                videoListElement.innerHTML = '';
+                videos.forEach((video, index) => {
+                    const videoElement = document.createElement('div');
+                    videoElement.className = 'video-title' + (index === 0 ? ' active-video' : '');
+                    videoElement.setAttribute('data-title', video.title);
+                    videoElement.setAttribute('data-video-id', video.videoId);
+                    videoElement.textContent = video.title;
+                    videoListElement.appendChild(videoElement);
+                    
+                    // Add click event listener
+                    videoElement.addEventListener('click', function() {
+                        // Update active state
+                        document.querySelectorAll('.video-title').forEach(t => t.classList.remove('active-video'));
+                        this.classList.add('active-video');
+                        
+                        // Update the player title
+                        currentVideoTitle.textContent = this.getAttribute('data-title');
+                        
+                        // In a real implementation, you would update the video src here
+                        // For example: loadYouTubeVideo(this.getAttribute('data-video-id'));
+                    });
+                });
+            }
+            
+            // Function to load YouTube video (implement as needed)
+            function loadYouTubeVideo(videoId) {
+                // Replace the player-button with an actual YouTube embed
+                // Example:
+                // const playerContainer = document.querySelector('.player-container');
+                // playerContainer.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            }
+            
+            // Initialize the video list
+            generateVideoList();
+            
+            // Set the initial video title
+            if (videos.length > 0) {
+                currentVideoTitle.textContent = videos[0].title;
+                // loadYouTubeVideo(videos[0].videoId); // Uncomment to load the first video automatically
+            }
+        });
         
-    // Add more episodes as needed...
-];
-
-let currentEpisode = 1;
-const playlistElement = document.getElementById('playlist');
-const videoPlayer = document.getElementById('videoPlayer');
-
-// Function to update the active episode and video
-function updateActiveEpisode(episodeId) {
-    currentEpisode = episodeId;
-    const episode = episodes.find(ep => ep.id === episodeId);
-    
-    // Update video player
-    videoPlayer.src = `https://www.youtube.com/embed/${episode.videoId}`;
-    
-    // Update active state styling
-    document.querySelectorAll('.episode-item').forEach(item => {
-        if (parseInt(item.dataset.id) === currentEpisode) {
-            item.classList.add('bg-[#9c6f10]', 'text-white');
-            item.classList.remove('hover:bg-[#dbaf56]');
-        } else {
-            item.classList.remove('bg-[#9c6f10]', 'text-white');
-            item.classList.add('hover:bg-[#dbaf56]');
+        // Function to add new videos (can be called from elsewhere)
+        function addNewVideo(title, videoId) {
+            videos.push({
+                title: title,
+                videoId: videoId
+            });
+            
+            // Regenerate the video list
+            const videoListElement = document.getElementById('videoList');
+            if (videoListElement) {
+                // Only regenerate if the DOM is loaded
+                generateVideoList();
+            }
         }
-    });
-}
-
-// Generate playlist items
-episodes.forEach(episode => {
-    const episodeElement = document.createElement('div');
-    episodeElement.className = `episode-item p-3 mb-2 rounded-lg cursor-pointer transition-colors ${
-        episode.id === currentEpisode ? 'bg-[#9c6f10] text-white' : 'hover:bg-[#dbaf56]'
-    }`;
-    episodeElement.dataset.id = episode.id;
-    episodeElement.innerHTML = `<p class="text-sm font-medium">${episode.title}</p>`;
-    
-    episodeElement.addEventListener('click', () => {
-        updateActiveEpisode(episode.id);
-    });
-    
-    playlistElement.appendChild(episodeElement);
-});
-
-// Initialize first video
-if (episodes.length > 0) {
-    updateActiveEpisode(episodes[0].id);
-}

@@ -74,36 +74,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
  const videos = [
             {
-                title: "Agni Ep 1 — Eating with Gratitude!",
-                videoId: "video1" // Replace with actual YouTube video ID
+                title: "Make your Students come Crawling back to your",
+                videoId: "fpL5qta8MEM" // Replace with actual YouTube video ID
             },
             {
-                title: "Agni Ep 2 — Chewing Food 24 Times!",
-                videoId: "video2" // Replace with actual YouTube video ID
+                title: "How to treat a Bully ?",
+                videoId: "yAord3Vlxi0" // Replace with actual YouTube video ID
             },
             {
-                title: "Agni Ep 3— Setting the Right Ambience for Eating",
-                videoId: "video3" // Replace with actual YouTube video ID
+                title: "How to make Money using Yogicfuture Events💸",
+                videoId: "5owisk2vGVY" // Replace with actual YouTube video ID
             },
             {
-                title: "Agni Ep 4— Neem & Turmeric!",
-                videoId: "video4" // Replace with actual YouTube video ID
+                title: "What's the function of Rooms in Yogicfuture ?",
+                videoId: "Hs4mnkjMSr4" // Replace with actual YouTube video ID
             },
             {
-                title: "Agni Ep 5— Benefits of Ghee",
-                videoId: "video5" // Replace with actual YouTube video ID
+                title: "How to start an online Yoga Studio in 2025 with Yogicfuture ?",
+                videoId: "mbnctk5Lfdc" // Replace with actual YouTube video ID
             },
             {
-                title: "Agni Ep 6— Seasonal Eating",
-                videoId: "video6" // Replace with actual YouTube video ID
-            },
-            {
-                title: "Agni Ep 7— Mindful Cooking",
-                videoId: "video7" // Replace with actual YouTube video ID
-            },
-            {
-                title: "Agni Ep 8— Water Consumption",
-                videoId: "video8" // Replace with actual YouTube video ID
+                title: "How to attract Potential Yoga clients using Yogicfuture in 2025 ?",
+                videoId: "BUumtgvuJxI" // Replace with actual YouTube video ID
             }
             // Add new videos here as needed
         ];
